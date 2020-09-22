@@ -66,12 +66,12 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  color: var(--basic-black);
   list-style: none;
 }
 
 .main-nav__item--clear {
   text-decoration: none;
+  color: var(--basic-black);
 }
 
 /* Preview */
