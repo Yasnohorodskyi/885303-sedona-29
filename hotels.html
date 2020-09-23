@@ -3,9 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <base href="img">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Academy: Седона</title>
+  <title>HTML Academy: Седона (Лесняк К.А.)</title>
   <link rel="stylesheet" href="css\normalize.css">
   <link rel="stylesheet" href="css\style.css">
 </head>
@@ -15,13 +14,13 @@
   <header class="main-header">
     <nav class="main-nav">
       <a>
-        <img src="#" alt="Логотип сайта городка SEDONA" class="logo" width="138" height="70">
+        <img src="/img/logo.svg" alt="Логотип сайта городка SEDONA" class="logo" width="138" height="70">
       </a>
-      <ul>
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
+      <ul class="main-nav__item">
+        <li><a class="main-nav__item--clear" href="blank.html">Информация</a></li>
+        <li><a class="main-nav__item--clear" href="blank.html">Фото и видео</a></li>
+        <li><a class="main-nav__item--clear" href="blank.html">Карта штата</a></li>
+        <li><a class="main-nav__item--clear" href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -81,7 +80,7 @@
         <li>
           <article class="sorting-list__item">
             <h3 class="visually-hidden">Amara Resort & Spa</h3>
-            <p><img src="#" alt="Amara Resort & Spa" width="135" height="90"></p>
+            <p><img src="img/amara-resort.jpg" alt="Amara Resort & Spa" width="135" height="90"></p>
             <div>
               <a>Amara Resort & Spa</a>
               <div>
@@ -102,7 +101,7 @@
         <li>
           <article class="sorting-list__item">
             <h3 class="visually-hidden">Desert Quail Inn</h3>
-            <p><img src="#" alt="Desert Quail Inn" width="135" height="90"></p>
+            <p><img src="img/desert-quail-inn.jpg" alt="Desert Quail Inn" width="135" height="90"></p>
             <div>
               <a>Desert Quail Inn</a>
               <div>
@@ -123,7 +122,7 @@
         <li>
           <article class="sorting-list__item">
             <h3 class="visually-hidden">Villas at Poco Diablo</h3>
-            <p><img src="#" alt="Villas at Poco Diablo" width="135" height="90"></p>
+            <p><img src="img/villas-at-poco-diablo.jpg" alt="Villas at Poco Diablo" width="135" height="90"></p>
             <div>
               <a>Villas at Poco Diablo</a>
               <div>
@@ -168,8 +167,7 @@
       </ul>
     </section>
     <p>
-      Разработано:
-      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      <span class="main-footer__text">Website by</span><a class="main-footer__logo-htmlacademy"  href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="HTML Academy"></img></a>
     </p>
   </footer>
 
