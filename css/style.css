@@ -46,6 +46,10 @@
   background-color: var(--basic-grey);
 }
 
+.page {
+  height: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -273,6 +277,14 @@
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
+}
+
+.sorting-list__title:hover {
+  color: var(--basic-blue);
+}
+
+.sorting-list__title:active {
+  opacity: 0.3;
 }
 
 .sorting-list__details {
