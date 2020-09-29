@@ -73,6 +73,7 @@
 .clear {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 /* Header */
@@ -99,6 +100,20 @@
 
 .main-nav__item:active {
   opacity: 0.3;
+}
+
+/* Billboard */
+
+.billboard {
+  display: grid;
+  grid-template-columns: auto;  
+  background-image: url("../img/billboard_bg.jpg");
+  height: 509px;
+}
+
+.greeting {
+  justify-self: center;
+  padding-top: 57px;
 }
 
 /* Preview */
@@ -283,6 +298,13 @@
   font-size: 16px;
 }
 
+/* Sorting-list */
+
+.sorting-list__result {
+  display: grid;
+  grid-template-columns: 1200px;
+}
+
 .sorting {
   font-weight: normal;
   font-size: 12px;
@@ -318,7 +340,18 @@
   opacity: 1;
 }
 
+.selection__form {
+  display: grid;
+  grid-template-columns: 250px 250px auto;
+  height: 217px;  
+}
+
 /* Sorting-list */
+
+.sorting {
+  display: grid;
+  grid-template-columns: 330px 1fr 160px;
+}
 
 .sorting-list--clear {
   list-style: none;
