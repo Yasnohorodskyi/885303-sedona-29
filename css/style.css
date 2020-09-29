@@ -73,6 +73,7 @@
 .clear {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 /* Header */
@@ -86,11 +87,21 @@
   font-size: 14px;
   line-height: 26px;
   list-style: none;
+  display: flex;
+  height: 56px;
+  justify-content: space-between;
 }
 
 .main-nav__item {
   text-decoration: none;
   color: var(--basic-black);
+}
+
+.main-nav__list-item {
+  width: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 72px;
 }
 
 .main-nav__item:hover {
@@ -101,11 +112,37 @@
   opacity: 0.3;
 }
 
+.main-header__logo {
+  position: absolute;
+  width: 138px;
+  height: 70px;
+  left: 690px;
+  top: 0;
+}
+
+/* Billboard */
+
+.billboard {
+  display: grid;
+  grid-template-columns: auto;
+  background-image: url("../img/billboard_bg.jpg");
+  height: 509px;
+}
+
+.greeting {
+  justify-self: center;
+  padding-top: 57px;
+}
+
 /* Preview */
 
 .preview {
   background-color: var(--basic-white);
   min-height: 216px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .preview__title {
@@ -113,6 +150,11 @@
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
+  width: 470px;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 44px;
+  margin: 0;
 }
 
 .preview__text {
@@ -120,6 +162,8 @@
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
+  margin: 0;
+  padding-bottom: 50px;
 }
 
 /* Advantages */
@@ -135,6 +179,9 @@
   height: 256px;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .advantages__item-img {
@@ -188,6 +235,7 @@
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
+  min-width: 122px;
 }
 
 .advantages__number,
@@ -285,6 +333,13 @@
 
 /* Sorting */
 
+/* Sorting-list */
+
+.sorting-list__result {
+  display: grid;
+  grid-template-columns: 1200px;
+}
+
 .sorting {
   font-weight: normal;
   font-size: 12px;
@@ -321,12 +376,17 @@
 }
 
 .selection__form {
-  background: var(--basic-black);
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 250px 250px auto;
+  height: 217px;
 }
 
 /* Sorting-list */
+
+.sorting {
+  display: grid;
+  grid-template-columns: 330px 1fr 160px;
+}
 
 .sorting-list--clear {
   list-style: none;
