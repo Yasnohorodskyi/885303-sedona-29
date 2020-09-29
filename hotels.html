@@ -11,7 +11,7 @@
 
 <body class="body-page">
 
-  <header class="main-header">
+  <header class="main-header container">
     <nav class="main-nav">
       <a href="index.html">
         <img src="/img/logo.svg" alt="Логотип сайта городка SEDONA" class="logo" width="138" height="70">
@@ -25,7 +25,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container">
 
     <h1 class="visually-hidden">Каталог гостиниц городка SEDONA</h1>
 
@@ -53,17 +53,19 @@
       </form>
     </section>
 
-    <section class="sorting">
-      <h2 class="sorting__title">Найдено:</h2><span class="quantity">3</span>
-      <p class="sorting__text">Сортировка:</p>
+    <section class="sorting clear">
+      <div class="sorting__title">
+        <h2 class="sorting__title">Найдено:</h2><span class="quantity">3</span>
+        <p class="sorting__text">Сортировка:</p>
+      </div>
 
-      <ul class="sorting__parameters">
+      <ul class="sorting__parameters clear">
         <li><a class="sorting__parameters-item" href="#">По цене</a></li>
         <li><a class="sorting__parameters-item" href="#">По типу</a></li>
         <li><a class="sorting__parameters-item" href="#">По рейтингу</a></li>
       </ul>
 
-      <ul class="sorting__toggle">
+      <ul class="sorting__toggle clear">
         <a>
           <li class="sorting__toggle_up"><span class="visually-hidden">По возрастанию</span></li>
         </a>
@@ -76,7 +78,7 @@
     <section class="sorting-list">
       <h2 class="visually-hidden">Список подходящих гостиниц</h2>
 
-      <ul class="sorting-list--clear">
+      <ul class="sorting-list__result clear">
         <li>
           <article class="sorting-list__item">
             <h3 class="visually-hidden">Amara Resort & Spa</h3>
@@ -146,7 +148,7 @@
 
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer container">
 
     <section class="main-footer__contacts">
       <p>#VISITSEDONA</p>
@@ -154,7 +156,7 @@
     </section>
 
     <section class="social">
-      <ul class="social__items">
+      <ul class="social__items clear">
         <li class="social__items_twit">
           <a href="https://twitter.com/?lang=ru">Twitter</a>
         </li>
@@ -167,7 +169,9 @@
       </ul>
     </section>
     <p>
-      <span class="main-footer__text">Website by</span><a class="main-footer__logo-htmlacademy"  href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="HTML Academy"></img></a>
+      <span class="main-footer__text">Website by</span><a class="main-footer__logo-htmlacademy"
+        href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"
+          alt="HTML Academy"></img></a>
     </p>
   </footer>
 
