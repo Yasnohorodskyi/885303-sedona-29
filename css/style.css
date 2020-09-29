@@ -236,6 +236,7 @@
   line-height: 21px;
   color: var(--basic-black);
   min-width: 122px;
+  text-align: center;
 }
 
 .advantages__number,
@@ -244,6 +245,7 @@
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-black);
+  text-align: center;
 }
 
 .advantages__title--white,
