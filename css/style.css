@@ -283,6 +283,8 @@
   font-size: 16px;
 }
 
+/* Sorting */
+
 .sorting {
   font-weight: normal;
   font-size: 12px;
@@ -316,6 +318,12 @@
 .sorting__parameters-item:active {
   color: var(--basic-black);
   opacity: 1;
+}
+
+.selection__form {
+  background: var(--basic-black);
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
 }
 
 /* Sorting-list */
