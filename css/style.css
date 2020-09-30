@@ -237,6 +237,9 @@
   color: var(--basic-black);
   min-width: 122px;
   text-align: center;
+  padding-top: 45px;
+  padding-bottom: 24px;
+  margin: 0;
 }
 
 .advantages__number,
@@ -246,6 +249,11 @@
   line-height: 21px;
   color: var(--basic-black);
   text-align: center;
+  margin: 0;
+}
+
+.advantages__number {
+  padding-bottom: 25px;
 }
 
 .advantages__title--white,
@@ -259,6 +267,9 @@
 .recommendation__item {
   background-color: var(--basic-white);
   min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .recommendation {
