@@ -87,11 +87,21 @@
   font-size: 14px;
   line-height: 26px;
   list-style: none;
+  display: flex;
+  height: 56px;
+  justify-content: space-between;
 }
 
 .main-nav__item {
   text-decoration: none;
   color: var(--basic-black);
+}
+
+.main-nav__list-item {
+  width: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 72px;
 }
 
 .main-nav__item:hover {
@@ -102,11 +112,19 @@
   opacity: 0.3;
 }
 
+.main-header__logo {
+  position: absolute;
+  width: 138px;
+  height: 70px;
+  left: 690px;
+  top: 0;
+}
+
 /* Billboard */
 
 .billboard {
   display: grid;
-  grid-template-columns: auto;  
+  grid-template-columns: auto;
   background-image: url("../img/billboard_bg.jpg");
   height: 509px;
 }
@@ -121,6 +139,10 @@
 .preview {
   background-color: var(--basic-white);
   min-height: 216px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .preview__title {
@@ -128,6 +150,11 @@
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
+  width: 470px;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 44px;
+  margin: 0;
 }
 
 .preview__text {
@@ -135,6 +162,8 @@
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
+  margin: 0;
+  padding-bottom: 50px;
 }
 
 /* Advantages */
@@ -150,6 +179,9 @@
   height: 256px;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .advantages__item-img {
@@ -203,6 +235,11 @@
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
+  min-width: 122px;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 24px;
+  margin: 0;
 }
 
 .advantages__number,
@@ -211,6 +248,12 @@
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-black);
+  text-align: center;
+  margin: 0;
+}
+
+.advantages__number {
+  padding-bottom: 25px;
 }
 
 .advantages__title--white,
@@ -223,7 +266,24 @@
 
 .recommendation__item {
   background-color: var(--basic-white);
-  min-height: 330px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.recommendation__title {
+  padding-top: 160px;
+}
+
+.recommendation__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-black);
+  text-align: center;
+  margin: 0;
 }
 
 .recommendation {
@@ -238,24 +298,38 @@
   color: var(--basic-black);
   text-transform: uppercase;
   min-height: 291px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .offer__text {
   font-weight: normal;
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 .offer__title {
   font-weight: bold;
   font-size: 30px;
+  text-align: center;
+  padding-top: 58px;
+  padding-bottom: 34px;
 }
 
 .offer__button {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-brown);
+  width: 568px;
+  height: 86px;
 }
 
 .offer__button:hover {
@@ -275,6 +349,7 @@
   color: var(--basic-black);
   background-color: var(--basic-white);
   opacity: 0.9;
+  height: 120px;
   display: grid;
   grid-template-columns: 400px 400px 400px;
 }
@@ -282,6 +357,38 @@
 .main-footer__text {
   font-weight: normal;
   font-size: 14px;
+}
+
+.main-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.main-footer__contacts-hashtag {
+  margin: 0;
+  padding-top: 23px;
+  padding-bottom: 13px;
+}
+
+.main-footer__contacts-tel {
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.social__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.main-footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Form selection */
@@ -297,6 +404,8 @@
   font-weight: bold;
   font-size: 16px;
 }
+
+/* Sorting */
 
 /* Sorting-list */
 
@@ -343,7 +452,7 @@
 .selection__form {
   display: grid;
   grid-template-columns: 250px 250px auto;
-  height: 217px;  
+  height: 217px;
 }
 
 /* Sorting-list */
