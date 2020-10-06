@@ -471,25 +471,31 @@
   background-image: url("/img/form_bg.jpg");
 }
 
-.selection__title {
-  font-weight: bold;
-  font-size: 16px;
-}
-
 .selection__form {
   display: flex;
   justify-content: flex-start;
-  padding-left: 73px;
+  padding: 25px 73px;
 }
 
 .selection__section {
   border: none;
   display: flex;
-  align-items: stretch;
+  width: 200px;
+  padding-right: 40px;
+}
+
+.selection__title {
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .selection__section:last-child {
   margin-left: auto;
+}
+
+.selection__section label {
+  padding-left: 30px;
+  margin-top: 25px;
 }
 
 /* Sorting */

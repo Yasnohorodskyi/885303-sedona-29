@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона (Лесняк К.А.)</title>
-  <link rel="stylesheet" href="css\normalize.css">
-  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body-page">
@@ -32,22 +32,33 @@
     <section class="selection">
       <h2 class="visually-hidden">Выбор гостиницы</h2>
       <form class="selection__form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="selection__section">
+        <fieldset class="selection__section clear">
           <legend class="selection__title">Инфраструктура:</legend>
           <label><input type="checkbox" value="pool">Бассейн</label>
           <label><input type="checkbox" value="parking">Парковка</label>
           <label><input type="checkbox" value="wi-fi">Wi-Fi</label>
         </fieldset>
-        <fieldset class="selection__section">
+        <fieldset class="selection__section clear">
           <legend class="selection__title">Тип жилья:</legend>
           <label><input type="checkbox" value="hotel">Гостиница</label>
           <label><input type="checkbox" value="motel">Мотель</label>
           <label><input type="checkbox" value="apartments">Апартаменты</label>
         </fieldset>
-        <fieldset class="selection__section">
+        <fieldset class="selection__section clear">
           <legend class="selection__title">Стоимость в сутки (Р):</legend>
-          <label><input class="selection__min-value" type="text" value="0">0</label>
-          <label><input class="selection__max-value" type="text" value="3000">3000</label>
+
+          <div class="selection__range-filter">
+            <div class="selection__range-controls">
+              <div class="selection__range-scale">
+                <div class="selection__range-bar"></div>
+              </div>
+            </div>
+            <div class="selection__range-price">
+              <div class="selection__toggle toggle-min"></div>
+              <div class="selection__toggle toggle-max"></div>
+            </div>
+          </div>
+
           <label><input type="submit" value="Показать"></label>
         </fieldset>
       </form>
@@ -67,12 +78,12 @@
       </ul>
 
       <ul class="sorting__toggle clear">
-        <a>
-          <li class="sorting__toggle_up"><span class="visually-hidden">По возрастанию</span></li>
-        </a>
-        <a>
-          <li class="sorting__toggle_down"><span class="visually-hidden">По убыванию</span></li>
-        </a>
+        <li>
+          <a class="sorting__toggle_up"><span class="visually-hidden">По возрастанию</span></a>
+        </li>
+          <li>
+          <a class="sorting__toggle_down"><span class="visually-hidden">По убыванию</span></a>
+          </li>
       </ul>
     </section>
 
