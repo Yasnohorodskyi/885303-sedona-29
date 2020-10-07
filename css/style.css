@@ -393,11 +393,11 @@
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
-  background-color: var(--footer-bg);  
+  background-color: var(--footer-bg);
   opacity: 0.9;
   min-height: 120px;
   display: grid;
-  grid-template-columns: 400px 400px 400px;   
+  grid-template-columns: 400px 400px 400px;
 }
 
 .main-footer--transform {
@@ -407,6 +407,7 @@
 .main-footer__text {
   font-weight: normal;
   font-size: 14px;
+  margin-right: 8px;
 }
 
 .main-footer__contacts {
@@ -511,24 +512,18 @@
   font-size: 12px;
   line-height: 18px;
   color: var(--basic-black);
-  width: 1200px;
   display: flex;
   justify-content: flex-start;
+  padding:33px 73px 30px;
 }
 
 .sorting__title {
   display: flex;
-  padding-left: 73px;
-  padding-bottom: 33px;
-  padding-top: 30px;
 }
 
 .sorting__parameters {
   display: flex;
   list-style: none;
-  padding-bottom: 33px;
-  padding-top: 32px;
-  padding-left: 45px;
 }
 
 .quantity,
@@ -559,6 +554,21 @@
   opacity: 1;
 }
 
+.sorting__toggle {
+  margin: 0;
+  list-style: none;
+  margin-left: auto;
+  display: flex;
+}
+
+.sorting__toggle_down {
+  margin-left: 12px;
+}
+
+.sorting__text {
+  margin-right: 40px;
+}
+
 /* Sorting-list */
 
 .sorting-list__result {
@@ -577,7 +587,7 @@
   color: var(--basic-blacklight);
   display: flex;
   padding: 27px 73px;
-  border-top: 2px solid var(--border);  
+  border-top: 2px solid var(--border);
 }
 
 .sorting-list__title {
@@ -585,7 +595,7 @@
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
-  margin-bottom: 12px;  
+  margin-bottom: 12px;
 }
 
 .sorting-list__title:hover {
@@ -603,7 +613,7 @@
   background-color: var(--basic-blue);
   display: flex;
   width: 110px;
-  height: 27px;  
+  height: 27px;
   align-items: center;
   justify-content: center;
   margin-right: 6px;
@@ -624,9 +634,9 @@
   background-color: var(--basic-brown);
   display: flex;
   width: 142px;
-  height: 27px;  
+  height: 27px;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .sorting-list__reservation:hover {
@@ -639,11 +649,11 @@
 
 .sorting-list__wrap {
   display: flex;
-  margin-bottom: 15px;  
+  margin-bottom: 15px;
 }
 
 .sorting-list__type-hotel {
-  width: 116px;  
+  width: 116px;
 }
 
 .sorting-list__foto {
