@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона (Лесняк К.А.)</title>
-  <link rel="stylesheet" href="css\normalize.css">
-  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body-page">
@@ -14,7 +14,7 @@
   <header class="main-header container">
     <nav class="main-nav">
       <a class="main-header__logo" href="index.html">
-        <img src="/img/logo.svg" alt="Логотип сайта городка SEDONA" class="logo" width="138" height="70">
+        <img src="img/logo.svg" alt="Логотип сайта городка SEDONA" class="logo" width="138" height="70">
       </a>
       <ul class="main-nav__list clear">
         <li class="main-nav__list-item"><a class="main-nav__item active" href="blank.html">Информация</a></li>
@@ -32,31 +32,43 @@
     <section class="selection">
       <h2 class="visually-hidden">Выбор гостиницы</h2>
       <form class="selection__form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
+        <fieldset class="selection__section clear">
           <legend class="selection__title">Инфраструктура:</legend>
           <label><input type="checkbox" value="pool">Бассейн</label>
           <label><input type="checkbox" value="parking">Парковка</label>
           <label><input type="checkbox" value="wi-fi">Wi-Fi</label>
         </fieldset>
-        <fieldset>
+        <fieldset class="selection__section clear">
           <legend class="selection__title">Тип жилья:</legend>
           <label><input type="checkbox" value="hotel">Гостиница</label>
           <label><input type="checkbox" value="motel">Мотель</label>
           <label><input type="checkbox" value="apartments">Апартаменты</label>
         </fieldset>
-        <fieldset>
+        <fieldset class="selection__section clear">
           <legend class="selection__title">Стоимость в сутки (Р):</legend>
-          <label><input class="selection__min-value" type="text" value="0">0</label>
-          <label><input class="selection__max-value" type="text" value="3000">3000</label>
+
+          <div class="selection__range-filter">
+            <div class="selection__range-controls">
+              <div class="selection__range-scale">
+                <div class="selection__range-bar"></div>
+              </div>
+            </div>
+            <div class="selection__range-price">
+              <div class="selection__toggle toggle-min"></div>
+              <div class="selection__toggle toggle-max"></div>
+            </div>
+          </div>
+
           <label><input type="submit" value="Показать"></label>
         </fieldset>
       </form>
     </section>
 
     <section class="sorting clear">
-      <div class="sorting__title">
-        <h2 class="sorting__title">Найдено:</h2><span class="quantity">3</span>
-        <p class="sorting__text">Сортировка:</p>
+      <div class="sorting__title clear">
+        <h2 class="quantity clear">Найдено:</h2>
+        <p class="quantity sorting__quantity-result clear">3</p>
+        <p class="sorting__text clear">Сортировка:</p>
       </div>
 
       <ul class="sorting__parameters clear">
@@ -65,33 +77,41 @@
         <li><a class="sorting__parameters-item" href="#">По рейтингу</a></li>
       </ul>
 
-      <ul class="sorting__toggle clear">
-        <a>
-          <li class="sorting__toggle_up"><span class="visually-hidden">По возрастанию</span></li>
-        </a>
-        <a>
-          <li class="sorting__toggle_down"><span class="visually-hidden">По убыванию</span></li>
-        </a>
+      <ul class="sorting__toggle">
+        <li>
+          <a class="sorting__toggle_up"><span class="visually-hidden">По возрастанию</span>
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="sorting__toggle_down"><span class="visually-hidden">По убыванию</span>
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
+            </svg>
+          </a>
+        </li>
       </ul>
-    </section>
+      </section>
 
     <section class="sorting-list">
       <h2 class="visually-hidden">Список подходящих гостиниц</h2>
 
       <ul class="sorting-list__result clear">
         <li>
-          <article class="sorting-list__item">
+          <article class="clear sorting-list__item">
             <h3 class="visually-hidden">Amara Resort & Spa</h3>
-            <p><img src="img/amara-resort.jpg" alt="Amara Resort & Spa" width="135" height="90"></p>
+            <p class="clear sorting-list__foto"><img src="img/amara-resort.jpg" alt="Amara Resort & Spa" width="135" height="90"></p>
             <div>
               <a class="sorting-list__title">Amara Resort & Spa</a>
-              <div>
-                <p class="sorting-list__type-hotel">Гостиница</p>
-                <p class="sorting-list__price-hotel"><span>ОТ </span>4000 <span>Р.</span></p>
+              <div class="sorting-list__wrap">
+                <p class="clear sorting-list__type-hotel">Гостиница</p>
+                <p class="clear sorting-list__price-hotel"><span class="clear">ОТ </span>4000 <span>Р.</span></p>
               </div>
               <div class="sorting-list__buttons">
-                <a href="#" class="sorting-list__details">Подробнее</a>
-                <a href="#" class="sorting-list__reservation">Забронировать</a>
+                <a href="#" class="clear sorting-list__details">Подробнее</a>
+                <a href="#" class="clear sorting-list__reservation">Забронировать</a>
               </div>
             </div>
             <div class="sorting-list__raiting">
@@ -101,39 +121,39 @@
           </article>
         </li>
         <li>
-          <article class="sorting-list__item">
+          <article class="clear sorting-list__item">
             <h3 class="visually-hidden">Desert Quail Inn</h3>
-            <p><img src="img/desert-quail-inn.jpg" alt="Desert Quail Inn" width="135" height="90"></p>
+            <p class="clear sorting-list__foto"><img src="img/desert quail inn.jpg" alt="Desert Quail Inn" width="135" height="90"></p>
             <div>
               <a class="sorting-list__title">Desert Quail Inn</a>
-              <div>
-                <p class="sorting-list__type-hotel">Мотель</p>
-                <p class="sorting-list__price-hotel"><span>ОТ </span>3000 <span>Р.</span></p>
+              <div class="sorting-list__wrap">
+                <p class="clear sorting-list__type-hotel">Мотель</p>
+                <p class="clear sorting-list__price-hotel"><span>ОТ </span>3000 <span>Р.</span></p>
               </div>
               <div class="sorting-list__buttons">
-                <a href="#" class="sorting-list__details">Подробнее</a>
-                <a href="#" class="sorting-list__reservation">Забронировать</a>
+                <a href="#" class="clear sorting-list__details">Подробнее</a>
+                <a href="#" class="clear sorting-list__reservation">Забронировать</a>
               </div>
             </div>
-            <div class="sorting-list__raiting">
-              <p class="sorting-list__stars-three"><span class="visually-hidden">3 звезды</span></p>
-              <p class="sorting-list__rating">Рейтинг: <span class="sorting-list__rating-value">8,9</span></p>
+            <div class="clear sorting-list__raiting">
+              <p class="clear sorting-list__stars-three"><span class="visually-hidden">3 звезды</span></p>
+              <p class="clear sorting-list__rating">Рейтинг: <span class="sorting-list__rating-value">8,9</span></p>
             </div>
           </article>
         </li>
         <li>
-          <article class="sorting-list__item">
+          <article class="clear sorting-list__item">
             <h3 class="visually-hidden">Villas at Poco Diablo</h3>
-            <p><img src="img/villas-at-poco-diablo.jpg" alt="Villas at Poco Diablo" width="135" height="90"></p>
+            <p class="clear sorting-list__foto"><img src="img/villas-at-poco-diablo.jpg" alt="Villas at Poco Diablo" width="135" height="90"></p>
             <div>
               <a class="sorting-list__title">Villas at Poco Diablo</a>
-              <div>
-                <p class="sorting-list__type-hotel">Апартаменты</p>
-                <p class="sorting-list__price-hotel"><span>ОТ </span>2000 <span>Р.</span></p>
+              <div class="sorting-list__wrap">
+                <p class="clear sorting-list__type-hotel">Апартаменты</p>
+                <p class="clear sorting-list__price-hotel"><span>ОТ </span>2000 <span>Р.</span></p>
               </div>
               <div class="sorting-list__buttons">
-                <a href="#" class="sorting-list__details">Подробнее</a>
-                <a href="#" class="sorting-list__reservation">Забронировать</a>
+                <a href="#" class="clear sorting-list__details">Подробнее</a>
+                <a href="#" class="clear sorting-list__reservation">Забронировать</a>
               </div>
             </div>
             <div class="sorting-list__raiting">
@@ -151,24 +171,43 @@
   <footer class="main-footer container">
 
     <section class="main-footer__contacts">
-      <p>#VISITSEDONA</p>
-      <p>ТЕЛ: +7(495) 666-01-66</p>
+      <p class="main-footer__contacts-hashtag">#VISITSEDONA</p>
+      <p class="main-footer__contacts-tel">ТЕЛ: +7(495) 666-01-66</p>
     </section>
 
     <section class="social">
       <ul class="social__items clear">
-        <li class="social__items_twit">
-          <a href="https://twitter.com/?lang=ru">Twitter</a>
+        <li class="social__items-element">
+          <span class="visually-hidden">Twitter</span>
+          <a class="social__button" href="https://twitter.com/?lang=ru">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z"
+                fill="white" />
+            </svg>
+          </a>
         </li>
-        <li class="social__items_facebook">
-          <a href="https://ru-ru.facebook.com/">Facebook</a>
+        <li class="social__items-element">
+          <span class="visually-hidden">Facebook</span>
+          <a class="social__button" href="https://ru-ru.facebook.com/">
+            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
+            </svg>
+          </a>
         </li>
-        <li class="social__items_youtube">
-          <a href="https://www.youtube.com/">YouTube</a>
+        <li class="social__items-element">
+          <span class="visually-hidden">YouTube</span>
+          <a class="social__button" href="https://www.youtube.com/">
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z"
+                fill="white" />
+            </svg>
+          </a>
         </li>
       </ul>
     </section>
-    <p>
+    <p class="main-footer__logo">
       <span class="main-footer__text">Website by</span><a class="main-footer__logo-htmlacademy"
         href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"
           alt="HTML Academy"></img></a>
