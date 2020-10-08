@@ -569,6 +569,15 @@
   margin-right: 40px;
 }
 
+.sorting__toggle_up path:hover,
+.sorting__toggle_down path:hover {
+  fill: var(--basic-blue);
+}
+
+.sorting__toggle_up .current path:active {
+  fill: var(--basic-blue);
+}
+
 /* Sorting-list */
 
 .sorting-list__result {
