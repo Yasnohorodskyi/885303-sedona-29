@@ -469,6 +469,67 @@
   align-items: center;
 }
 
+/* Searche form */
+
+.searche__form {  
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  display: flex;  
+  flex-direction: column;  
+  background-color: var(--basic-white);
+  padding: 55px 55px;      
+}
+
+.searche__form-date {
+
+  border: none;   
+}
+
+.searche__form-quantity {       
+  border: none;
+  margin-bottom: 55px;  
+}
+
+.searche__form-quantity--minus,
+.searche__form-quantity--plus {
+  width: 40px;
+  height: 40px;
+}
+
+.searche__form-quantity--grown,
+.searche__form-quantity--child {
+  width: 17px;
+  height: 17px;
+  padding: 10px;
+  border: none;
+  background-color: var(--opacity);
+  background-color: var(--basic-grey);
+}
+
+.searche__form-quantity button {
+  border: none;
+}
+
+.searche__form-date input {
+  width: 346px;
+  height: 38px;
+  border: none;
+  margin-bottom: 28px;
+  background-color: var(--basic-grey);  
+}
+
+.searche__form-date--arrival,
+.searche__form-date--departure  {
+  margin-right: 24px;      
+}
+
+.searche__form-button {
+  width: 100%;   
+  height: 58px;
+  background-color: var(--basic-blue);
+}
+
 /* Form selection */
 
 .selection {
