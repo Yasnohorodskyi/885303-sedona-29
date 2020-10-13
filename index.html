@@ -165,6 +165,33 @@
     </p>
   </footer>
 
+  <form class="searche__form" action="https://echo.htmlacademy.ru" method="post">
+
+    <fieldset class="searche__form-date">
+      <label id="arrival" for="arrival">Дата заезда</label>
+      <input type="date" name="arrival">
+  
+      <label id="arrival" for="departure">Дата заезда</label>
+      <input type="date" name="departure">
+    </fieldset>
+  
+    <fieldset class="searche__form-quantity">
+      <div>
+        <label for="searche__form-quantity--grown">Взрослые</label>
+        <button type="button" class="searche__form-quantity--minus">-</button>
+        <input type="number" name="searche__form-quantity--grown">
+        <button type="button" class="searche__form-quantity--plus">+</button>
+      </div>
+      <div>
+        <label for="searche__form-quantity--child">Дети</label>
+        <button type="button" class="searche__form-quantity--minus">-</button>
+        <input type="number" name="searche__form-quantity--child">
+        <button type="button" class="searche__form-quantity--plus">+</button>
+      </div>
+    </fieldset>
+    
+  </form>
+
 </body>
 
 </html>
