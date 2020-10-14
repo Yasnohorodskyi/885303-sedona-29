@@ -50,7 +50,7 @@
               жизнь</p>
           </div>
           <p class="advantages__item-img clear">
-            <img src="img/foto_sedona-sity.jpg" alt="Фото городка SEDONA" class="advantages__item_img" width="800"
+            <img src="img/foto_sedona-sity.jpg" alt="Фото городка SEDONA" class="advantages__item--img" width="800"
               height="256">
           </p>
           <ul class="advantages_item recommendation clear">
@@ -76,7 +76,7 @@
               осмелитесь</p>
           </div>
           <p class="clear advantages__item-img--reverse">
-            <img src="img/bridge-diablo.jpg" alt="Фото Моста Дьявола" class="advantages__item_img" width="800"
+            <img src="img/bridge-diablo.jpg" alt="Фото Моста Дьявола" class="advantages__item--img" width="800"
               height="256">
           </p>
         </li>
@@ -106,40 +106,62 @@
       <p class="offer__text clear">Укажите предполагаемые даты поездки,<br> и
         мы покажем вам лучшие предложения гостиниц в Cедоне</p>
 
-      <button class="offer__button clear" type="button">Поиск гостиницы в Седоне</button>
-      <form class="clear searche__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="clear searche__form-date">
-          <label id="arrival" for="arrival" class="clear searche__form-date--arrival">Дата заезда</label>
-          <input type="date" name="arrival">
-        </fieldset>
-
-        <fieldset class="clear searche__form-date">
-          <label id="arrival" for="departure" class="clear searche__form-date--departure">Дата заезда</label>
-          <input type="date" name="departure">
-        </fieldset>
-
-        <fieldset class="clear searche__form-quantity">
-        
-          <label for="grown" class="clear searche__form-quantity-title">Взрослые</label>
-          <button type="button" class="searche__form-quantity--minus">-</button>
-          <input type="number" name="grown" class="clear searche__form-quantity--grown">
-          <button type="button" class="searche__form-quantity--plus">+</button>        
-        
-          <label for="child" class="searche__form-quantity-title">Дети</label>
-          <button type="button" class="searche__form-quantity--minus">-</button>
-          <input type="number" name="child" class="clear searche__form-quantity--child">
-          <button type="button" class="searche__form-quantity--plus">+</button>        
-
-        </fieldset>/
-
-        <button class="clear searche__form-button" type="button">Найти</button>
-
-      </form>
+      <div class="searche__form-wrap">      
+        <button class="offer__button clear" type="button">Поиск гостиницы в Седоне</button>
+      
+        <form class="clear searche__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="clear searche__form-date">
+            <label id="arrival" for="arrival" class="clear searche__form-date--arrival">Дата заезда</label>
+            <input type="text" name="arrival">
+          </fieldset>
+      
+          <fieldset class="clear searche__form-date">
+            <label id="arrival" for="departure" class="clear searche__form-date--departure">Дата заезда</label>
+            <input type="text" name="departure">
+          </fieldset>
+      
+          <fieldset class="clear searche__form-quantity">
+      
+            <label for="grown" class="clear searche__form-quantity-grown">Взрослые</label>
+            <button type="button" class="searche__form-quantity--minus">
+              <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="12" height="3" fill="#A9A9A9" />
+              </svg>
+            </button>
+            <input type="text" name="grown" class="clear searche__form-quantity--grown">
+            <button type="button" class="searche__form-quantity--plus">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9" />
+              </svg>
+            </button>
+      
+            <label for="child" class="searche__form-quantity-child">Дети</label>
+            <button type="button" class="searche__form-quantity--minus">
+              <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="12" height="3" fill="#A9A9A9" />
+              </svg>
+            </button>
+            <input type="text" name="child" class="clear searche__form-quantity--child">
+            <button type="button" class="searche__form-quantity--plus">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9" />
+              </svg>
+            </button>
+      
+          </fieldset>
+      
+          <button class="clear searche__form-button" type="button">Найти</button>
+      
+        </form>
+      </div>
 
     </section>
 
     <section class="map clear">
-      <img src="img/map.jpg" alt="Карта городка SEDONA" width="1199" height="594">
+      <iframe class ="map_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52379.39482859178!2d-111.7920490180959!3d34.86345877389542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1602655783390!5m2!1sru!2sru" width="1199" height="594" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <img src="img/map.jpg" alt="Карта городка SEDONA" width="1199" height="594" class="map_img">
     </section>
 
   </main>
