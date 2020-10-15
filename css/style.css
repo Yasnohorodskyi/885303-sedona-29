@@ -504,13 +504,24 @@
   border: none;   
 }
 
-.searche__form-date::after {
+.searche__form-date--departure-icon::before {
   content: "";
   position: absolute;
   background-image: url('../img/calendar.svg');
   width: 21px;
   height: 23px;
-  right: 60px;    
+  top: 62px;
+  right: 70px;    
+}
+
+.searche__form-date--arrival-icon::before {
+  content: "";
+  position: absolute;
+  background-image: url('../img/calendar.svg');
+  width: 21px;
+  height: 23px;
+  top: 132px;
+  right: 70px;
 }
 
 .searche__form-date input:hover {
@@ -524,7 +535,8 @@
 
 
 .searche__form-quantity {
-  display: flex; 
+  display: flex;
+  flex-direction: row; 
   font-size: 0;     
   border: none;
   margin-bottom: 55px;    
