@@ -17,12 +17,13 @@
 
   --active-blue: #5496BD;
   --active-brown: #503E33;
+  --active-logo: #BDBBBC;
 
   --border: #E5E5E5;
   --footer-bg: rgba(255,255,255, 0.9);
   --scale-bar: #ABABAB;
   --opacity: rgba(255, 255, 255, 0)
-
+  
 }
 
 /* Fonts */
@@ -395,10 +396,16 @@
 
 /* Map */
 
+.map {
+  position: relative;
+}
+
 .map_img {
-  display: block;
+  display: block;      
+}
+
+.map_iframe {
   position: absolute;
-  margin-left: 100%;   
 }
 
 /* Footer */
@@ -427,37 +434,31 @@
 
 .main-footer__contacts {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: column;  
   text-align: center;
+  padding-top: 18px;
+  padding-left: 74px;
 }
 
-.main-footer__contacts-hashtag {
-  margin: 0;
-  padding-top: 23px;
-  padding-bottom: 13px;
-}
-
-.main-footer__contacts-tel {
-  margin: 0;
-  padding-bottom: 40px;
+.main-footer__contacts-hashtag {  
+  margin-bottom: 10px; 
 }
 
 .social__items {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 120px;
+  min-height: 120px;  
 }
 
 .social__button:nth-child(even) {
-  margin: 0 5px 0 5px;
+  margin: 0 3px 0 3px;
 }
 
 
 .social__button {
-  width: 46px;
-  height: 48px;
+  width: 48px;
+  height: 46px;
   background-color: var(--basic-blue);
   display: flex;
   align-items: center;
@@ -478,8 +479,21 @@
 
 .main-footer__logo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.main-footer__text {
+  margin-right: 9px;
+  margin-left: 65px;
+}
+
+.main-footer__logo-htmlacademy path:hover {
+  fill: var(--basic-blue);
+}
+
+.main-footer__logo-htmlacademy path:active {
+  fill: var(--active-logo);
 }
 
 /* Searche form */
@@ -489,8 +503,7 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  display: flex;  
-  flex-direction: column;  
+  display: flex;    
   background-color: var(--basic-white);  
   padding: 55px 55px;  
   display: none;    
@@ -498,6 +511,7 @@
 
 .popap-show {
   display: block;
+  z-index: 1;
 }
 
 .searche__form-date {    
