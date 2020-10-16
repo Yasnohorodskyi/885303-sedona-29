@@ -662,6 +662,7 @@
 .selection__section {
   border: none;
   display: flex;
+  flex-direction: column;
   width: 200px;  
 }
 
@@ -670,13 +671,40 @@
   font-size: 16px;
 }
 
+.selection__section:first-child {
+  margin-right: 55px;
+}
+
 .selection__section:last-child {
   margin-left: auto;
 }
 
-.selection__section label {  
+.selection__section label {
+  margin-left: 40px;
+  position: relative;
+  display: block;  
   margin-top: 25px;
+  cursor: pointer;   
 }
+
+.selection__section-check label::after {
+  content: "1";
+  position: absolute;  
+  left: -40px;
+  width: 19px;
+  height: 19px;  
+  border: 2px solid var(--basic-white);
+  border-radius: 15%;  
+}
+
+/* .selection__section label::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  width: 27px;
+  height: 23px;  
+  background-image: url('../img/checkbox-on.svg');
+} */
 
 .selection__price-controls input {
   border: none;
