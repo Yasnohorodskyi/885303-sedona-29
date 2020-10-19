@@ -881,7 +881,7 @@
   line-height: 21px;
   color: var(--basic-blacklight);
   display: flex;
-  padding: 27px 73px;
+  padding: 30px 73px;
   border-top: 2px solid var(--border);
   background-color: var(--basic-white);
 }
@@ -890,8 +890,7 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  color: var(--basic-black);
-  margin-bottom: 15px;
+  color: var(--basic-black);  
 }
 
 .sorting-list__title:hover {
@@ -949,11 +948,10 @@
 }
 
 .sorting-list__type-hotel {
-  width: 116px;
+  width: 116px;  
 }
 
-.sorting-list__foto {
-  display: block;
+.sorting-list__foto {  
   margin-right: 29px;
 }
 
