@@ -883,6 +883,7 @@
   display: flex;
   padding: 27px 73px;
   border-top: 2px solid var(--border);
+  background-color: var(--basic-white);
 }
 
 .sorting-list__title {
@@ -957,6 +958,9 @@
 }
 
 .sorting-list__raiting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: auto;
 }
 
@@ -964,6 +968,17 @@
   display: flex;
 }
  
-.sorting-list__rating {
-  
+.sorting-list__raiting-text {
+  width: 100px;
+  height: 27px;
+  background-color: var(--basic-grey);
+  padding: 3px 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.sorting-list__stars {
+  width: 100px;
+  height: 20px;
+  background-color: black;
 }
