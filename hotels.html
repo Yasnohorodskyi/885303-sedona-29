@@ -29,31 +29,40 @@
 
     <h1 class="visually-hidden">Каталог гостиниц городка SEDONA</h1>
 
-    <section class="selection">
+    <section class="selection container">
       <h2 class="visually-hidden">Выбор гостиницы</h2>
       <form class="selection__form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="selection__section clear">
           <legend class="selection__title">Инфраструктура:</legend>
-          <label><input type="checkbox" value="pool">Бассейн</label>
-          <label><input type="checkbox" value="parking">Парковка</label>
-          <label><input type="checkbox" value="wi-fi">Wi-Fi</label>
+          <input type="checkbox" value="pool" id="pool" class="visually-hidden selection__section-check">
+          <label for="pool">Бассейн</label>
+          <input type="checkbox" value="parking" id="parking" class="visually-hidden selection__section-check">
+          <label for="parking">Парковка</label>
+          <input type="checkbox" value="wi-fi" id="Wi-Fi" class="visually-hidden selection__section-check">
+          <label for="Wi-Fi">Wi-Fi</label>
         </fieldset>
         <fieldset class="selection__section clear">
           <legend class="selection__title">Тип жилья:</legend>
-          <label><input type="checkbox" value="hotel">Гостиница</label>
-          <label><input type="checkbox" value="motel">Мотель</label>
-          <label><input type="checkbox" value="apartments">Апартаменты</label>
+          <input type="checkbox" value="hotel" id="hotel" class="visually-hidden selection__section-check">
+          <label for="hotel">Гостиница</label>
+          <input type="checkbox" value="motel" id="motel" class="visually-hidden selection__section-check">
+          <label for="motel">Мотель</label>
+          <input type="checkbox" value="apartments" id="apartments" class="visually-hidden selection__section-check ">
+          <label for="apartments">Апартаменты</label>
+
         </fieldset>
 
         <fieldset class="clear selection__section">
           <legend class="selection__title">Стоимость в сутки (Р):</legend>
 
-          <div class="selection__price-controls clear">
+          <div class="clear selection__price-controls">
             <label class="selection__min-price">
-              <span class="selection__price-controls-text">от</span><input type="text" name="min-price" value="0" class="clear">
+              <span class="selection__price-controls-text">от</span>
+              <input type="text" name="min-price" value="0">
             </label>
             <label class="selection__max-price">
-              <span class="selection__price-controls-text">до</span> <input type="text" name="max-price" value="3000" class="clear">
+              <span class="selection__price-controls-text">до</span>
+              <input type="text" name="max-price" value="3000">
             </label>
           </div>
           
@@ -69,7 +78,8 @@
             </div>
           </div>
 
-          <label><input type="submit" value="Показать" class="clear selection__section-button"></label>
+          <input type="submit" value="Показать" id="show" class="clear selection__section-button">
+          <label for="show"></label>
         </fieldset>
       </form>
     </section>
