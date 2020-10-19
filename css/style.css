@@ -654,7 +654,7 @@
 }
 
 .selection__form {
-  display: flex;
+  display: flex;  
   justify-content: flex-start;
   padding: 25px 73px;
 }
@@ -662,6 +662,7 @@
 .selection__section {
   border: none;
   display: flex;
+  flex-direction: column;
   width: 200px;  
 }
 
