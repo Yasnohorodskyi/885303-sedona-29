@@ -593,7 +593,7 @@
 }
 
 .searche__form-date input {
-  width: 341px;
+  width: 340px;
   height: 38px;
   border: none;
   margin-bottom: 28px;
@@ -970,13 +970,35 @@
   width: 100px;
   height: 27px;
   background-color: var(--basic-grey);
-  padding: 3px 12px;
+  padding: 3px 10px;
   text-align: center;
   vertical-align: middle;
 }
 
-.sorting-list__stars {
+.sorting-list__stars {  
+  background-image: url('../img/star.svg');
   width: 100px;
   height: 20px;
-  background-color: black;
+  background-repeat: space;
+  margin-left: auto;
+}
+
+.star-one {
+  width: 20px;
+}
+
+.star-two {
+  width: 40px;
+}
+
+.star-three {
+  width: 60px;
+}
+
+.star-four {
+  width: 80px;
+}
+
+.star-five {
+  width: 599px;
 }
