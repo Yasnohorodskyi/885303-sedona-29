@@ -17,10 +17,10 @@
         <img src="img/logo.svg" alt="Логотип сайта городка SEDONA" class="logo" width="138" height="70">
       </a>
       <ul class="main-nav__list">
-        <li class="main-nav__list-item"><a class="main-nav__item active" href="blank.html">Информация</a></li>
-        <li class="main-nav__list-item"><a class="main-nav__item active" href="blank.html">Фото и видео</a></li>
-        <li class="main-nav__list-item"><a class="main-nav__item active" href="blank.html">Карта штата</a></li>
-        <li class="main-nav__list-item"><a class="main-nav__item active" href="hotels.html">Гостиницы</a></li>
+        <li class="main-nav__list-item"><a class="main-nav__item" href="blank.html">Информация</a></li>
+        <li class="main-nav__list-item"><a class="main-nav__item" href="blank.html">Фото и видео</a></li>
+        <li class="main-nav__list-item"><a class="main-nav__item" href="blank.html">Карта штата</a></li>
+        <li class="main-nav__list-item"><a class="main-nav__item" href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -80,23 +80,25 @@
               height="256">
           </p>
         </li>
-        <ul class="advantages_item advantages__item_greey-wrap clear">
-          <li class="advantages_item advantages__item_greey">
-            <h3 class="advantages__title">Небольшая<br> площадь</h3>
-            <p class="advantages__number">— №3 —</p>
-            <p class="advantages__text">Все достопримечательности<br> находятся очень близко</p>
-          </li>
-          <li class="advantages_item advantages__item_greey">
-            <h3 class="advantages__title">Красивая<br> дорога</h3>
-            <p class="advantages__number">— №4 —</p>
-            <p class="advantages__text">Ехать в седону из лас-вегаса совсем<br> не скучно!</p>
-          </li>
-          <li class="advantages_item advantages__item_greey">
-            <h3 class="advantages__title">Мало<br> туристов</h3>
-            <p class="advantages__number">— №5 —</p>
-            <p class="advantages__text">Большинство едет в гранд каньон<br> и толпится там</p>
-          </li>
-        </ul>
+        <li>
+          <ul class="advantages_item advantages__item_greey-wrap clear">
+            <li class="advantages_item advantages__item_greey">
+              <h3 class="advantages__title">Небольшая<br> площадь</h3>
+              <p class="advantages__number">— №3 —</p>
+              <p class="advantages__text">Все достопримечательности<br> находятся очень близко</p>
+            </li>
+            <li class="advantages_item advantages__item_greey">
+              <h3 class="advantages__title">Красивая<br> дорога</h3>
+              <p class="advantages__number">— №4 —</p>
+              <p class="advantages__text">Ехать в седону из лас-вегаса совсем<br> не скучно!</p>
+            </li>
+            <li class="advantages_item advantages__item_greey">
+              <h3 class="advantages__title">Мало<br> туристов</h3>
+              <p class="advantages__number">— №5 —</p>
+              <p class="advantages__text">Большинство едет в гранд каньон<br> и толпится там</p>
+            </li>
+          </ul>
+        </li>
       </ul>
     </section>
 
@@ -106,61 +108,65 @@
       <p class="offer__text clear">Укажите предполагаемые даты поездки,<br> и
         мы покажем вам лучшие предложения гостиниц в Cедоне</p>
 
-      <div class="searche__form-wrap">      
+      <div class="searche__form-wrap">
         <button class="clear offer__button" type="button">Поиск гостиницы в Седоне</button>
-      
-        <form class="clear searche__form" action="https://echo.htmlacademy.ru" method="post">
+
+        <form class="clear searche__form popap-show" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="clear searche__form-date searche__form-date--arrival-icon">
-            <label id="arrival" for="arrival" class="clear searche__form-date--arrival">Дата заезда</label>
-            <input type="text" name="arrival" class="searche__form-arrival">
+            <label for="arrival" class="clear searche__form-date--arrival">Дата заезда</label>
+            <input type="text" id="arrival" name="arrival" class="searche__form-arrival">
           </fieldset>
-      
+
           <fieldset class="clear searche__form-date searche__form-date--departure-icon">
-            <label id="arrival" for="departure" class="clear searche__form-date--departure">Дата выезда</label>
-            <input type="text" name="departure" class="searche__form-departure">
+            <label for="departure" class="clear searche__form-date--departure">Дата выезда</label>
+            <input type="text" id="departure" name="departure" class="searche__form-departure">
           </fieldset>
-      
+
           <fieldset class="clear searche__form-quantity">
-      
+
             <label for="grown" class="clear searche__form-quantity-grown">Взрослые</label>
             <button type="button" class="searche__form-quantity--minus">
               <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="12" height="3" fill="#A9A9A9" />
               </svg>
             </button>
-            <input type="text" name="grown" class="clear searche__form-quantity--grown">
+            <input type="text" id="grown" name="grown" class="clear searche__form-quantity--grown">
             <button type="button" class="searche__form-quantity--plus">
               <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9" />
+                  d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                  fill="#A9A9A9" />
               </svg>
             </button>
-      
+
             <label for="child" class="searche__form-quantity-child">Дети</label>
             <button type="button" class="searche__form-quantity--minus">
               <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="12" height="3" fill="#A9A9A9" />
               </svg>
             </button>
-            <input type="text" name="child" class="clear searche__form-quantity--child">
+            <input type="text" id="child" name="child" class="clear searche__form-quantity--child">
             <button type="button" class="searche__form-quantity--plus">
               <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9" />
+                  d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                  fill="#A9A9A9" />
               </svg>
             </button>
-      
+
           </fieldset>
-      
+
           <button class="clear searche__form-button" type="button">Найти</button>
-      
+
         </form>
       </div>
 
     </section>
 
     <section class="map clear">
-      <iframe class ="map_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52379.39482859178!2d-111.7920490180959!3d34.86345877389542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1602655783390!5m2!1sru!2sru" width="1199" height="594" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe class="map_iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52379.39482859178!2d-111.7920490180959!3d34.86345877389542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1602655783390!5m2!1sru!2sru"
+        width="1199" height="594" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <img src="img/map.jpg" alt="Карта городка SEDONA" width="1199" height="594" class="map_img">
     </section>
 

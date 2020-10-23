@@ -1,8 +1,8 @@
-let popap = document.querySelector ('.searche__form');
-let button = document.querySelector ('.offer__button');
-let popapArrival = popap.querySelector ('.searche__form-arrival');
-let popapDeparture = popap.querySelector ('.searche__form-departure');
-let popapButton = popap.querySelector ('.searche__form-button');
+let popap = document.querySelector('.searche__form');
+let button = document.querySelector('.offer__button');
+let popapArrival = popap.querySelector('.searche__form-arrival');
+let popapDeparture = popap.querySelector('.searche__form-departure');
+let popapButton = popap.querySelector('.searche__form-button');
 
 button.addEventListener("click", function (evt) {
     if (popap.classList.contains("popap-show")) {
@@ -14,12 +14,11 @@ button.addEventListener("click", function (evt) {
     }
 });
 
-popapButton.addEventListener ("submit", function (evt) {
-        
+popapButton.addEventListener("submit", function (evt) {
     if (!popapArrival.value || !popapDeparture.value || !popapButton.value) {
-        evt.preventDefault();            
-        popap.classList.add ("popap-error");                
-    } 
+        evt.preventDefault();
+        popap.classList.add("popap-error");
+    }
 });
 
 
