@@ -50,7 +50,7 @@
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-style: normal;
   text-transform: uppercase;
-  background-color: var(--basic-grey);
+  background-color: var(--basic-grey);  
 
   min-height: 100%;
   display: grid;
@@ -64,7 +64,7 @@
 .container {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
 
 .visually-hidden {
@@ -85,6 +85,10 @@
 }
 
 /* Header */
+
+.main-header {
+  position: relative;
+}
 
 .main-nav {
   background-color: var(--basic-white);
@@ -196,7 +200,7 @@
   line-height: 26px;
   color: var(--basic-black);
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 51px;
 }
 
 /* Advantages */
@@ -254,7 +258,7 @@
 .advantages__item_greey {
   width: 400px;
   background-color: var(--basic-greylight);
-  padding-top: 44px;
+  padding-top: 46px;
   padding-bottom: 56px;
 }
 
@@ -363,7 +367,7 @@
   font-weight: bold;
   font-size: 30px;
   text-align: center;
-  padding-top: 55px;
+  padding-top: 56px;
   margin-bottom: 31px;
 }
 
@@ -423,11 +427,12 @@
   opacity: 0.9;
   min-height: 120px;
   display: grid;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: 400px 400px 400px;  
 }
 
 .main-footer--transform {
   transform: translateY(-100%);
+  border: none;
 }
 
 .main-footer__text {
@@ -510,7 +515,8 @@
   display: flex;    
   background-color: var(--basic-white);  
   padding: 55px 55px;  
-  display: none;    
+  display: none;
+  width: 458px;   
 }
 
 .popap-show {
@@ -532,20 +538,20 @@
   padding-left: 13px; 
 }
 
-.searche__form-date--departure-icon::before {
-  content: "";
-  position: absolute;
+.searche__form-date--calendar-arrival {
+  position: absolute;  
   background-image: url('../img/calendar.svg');
+  border: none;
   width: 21px;
   height: 23px;
-  top: 62px;
-  right: 70px;    
+  top: 60px;
+  right: 70px;      
 }
 
-.searche__form-date--arrival-icon::before {
-  content: "";
+.searche__form-date--calendar-departure {  
   position: absolute;
   background-image: url('../img/calendar.svg');
+  border: none;
   width: 21px;
   height: 23px;
   top: 132px;
@@ -567,7 +573,8 @@
   flex-direction: row; 
   font-size: 0;     
   border: none;
-  margin-bottom: 55px;    
+  margin-bottom: 51px;
+  align-items: center;    
 }
 
 .searche__form-quantity--minus,
@@ -600,7 +607,8 @@
   padding: 10px;
   border: none;  
   background-color: var(--basic-grey);
-  outline: none;
+  color: var(--basic-black);
+  outline: none;  
 }
 
 .searche__form-quantity button {  
@@ -608,7 +616,7 @@
 }
 
 .searche__form-date input {
-  width: 327px;
+  width: 326px;
   height: 38px;
   border: none;
   margin-bottom: 28px;
@@ -646,13 +654,13 @@
 
 .searche__form-quantity-grown {
   font-size: 14px;
-  margin-right: 43px;
+  margin-right: 49px;  
 }
 
 .searche__form-quantity-child {
   font-size: 14px;
-  margin-left: 50px;
-  margin-right: 20px;
+  margin-left: 42px;
+  margin-right: 23px;  
 }
 
 .searche__form-wrap {
@@ -756,14 +764,14 @@
 .selection__max-price {
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
+  height: 36px;  
 }
 
 .selection__min-price input,
 .selection__max-price input {
   width: 40px;
   outline: none;
-    
 }
 
 .selection__section-button {  
@@ -811,6 +819,7 @@
   display: flex;
   justify-content: flex-start;
   padding: 28px 73px 30px;
+  border-bottom: 1px solid var(--border);
 }
 
 .sorting__title {  
@@ -847,6 +856,7 @@
   opacity: 0.3;
   margin-right: 30px;
   border-bottom: 1px dashed var(--basic-blue);
+  color: var(--basic-black);
 }
 
 .sorting__parameters-item:hover {
@@ -879,6 +889,11 @@
 
 .sorting__toggle_up path:hover,
 .sorting__toggle_down path:hover {
+  fill: var(--basic-black);
+}
+
+.sorting__toggle_up path:active,
+.sorting__toggle_down path:active {
   fill: var(--basic-blue);
 }
 
@@ -889,6 +904,7 @@
 .active {
   color: var(--basic-blue);
   border: none;
+  opacity: 1;
 }
 
 /* Sorting-list */
@@ -910,6 +926,7 @@
   display: flex;
   padding: 30px 73px;  
   background-color: var(--basic-white);
+  border-bottom: 1px solid var(--border);  
 }
 
 .sorting-list__foto-img {
@@ -980,7 +997,7 @@
 }
 
 .sorting-list__container {
-  margin-top: -5px;
+  margin-top: -7px;
 }
 
 .sorting-list__type-hotel {
@@ -1013,6 +1030,7 @@
   text-align: center;
   vertical-align: middle;
   color: var(--basic-darkgrey);
+  margin-top: auto;
 }
 
 .sorting-list__stars {  
@@ -1036,11 +1054,11 @@
 }
 
 .star-four {
-  width: 80px;
+  width: 84px;
 }
 
 .star-five {
-  width: 599px;
+  width: 110px;
 }
 
 /* Animations */

@@ -113,13 +113,15 @@
 
         <form class="clear searche__form popap-show" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="clear searche__form-date searche__form-date--arrival-icon">
-            <label for="arrival" class="clear searche__form-date--arrival">Дата заезда</label>
-            <input type="text" id="arrival" name="arrival" class="searche__form-arrival">
+            <label for="arrival" class="clear searche__form-date--arrival">Дата заезда:</label>
+            <input type="text" id="arrival" name="arrival" class="searche__form-arrival" placeholder="24 апреля 2017">
+            <button type="button" class="searche__form-date--calendar-arrival"></button>
           </fieldset>
 
           <fieldset class="clear searche__form-date searche__form-date--departure-icon">
-            <label for="departure" class="clear searche__form-date--departure">Дата выезда</label>
-            <input type="text" id="departure" name="departure" class="searche__form-departure">
+            <label for="departure" class="clear searche__form-date--departure">Дата выезда:</label>
+            <input type="text" id="departure" name="departure" class="searche__form-departure" placeholder="31 апреля 2017">
+            <button type="button" class="searche__form-date--calendar-departure"></button>
           </fieldset>
 
           <fieldset class="clear searche__form-quantity">
@@ -130,7 +132,7 @@
                 <rect width="12" height="3" fill="#A9A9A9" />
               </svg>
             </button>
-            <input type="text" id="grown" name="grown" class="clear searche__form-quantity--grown">
+            <input type="text" id="grown" name="grown" class="clear searche__form-quantity--grown" placeholder="2">
             <button type="button" class="searche__form-quantity--plus">
               <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -145,7 +147,7 @@
                 <rect width="12" height="3" fill="#A9A9A9" />
               </svg>
             </button>
-            <input type="text" id="child" name="child" class="clear searche__form-quantity--child">
+            <input type="text" id="child" name="child" class="clear searche__form-quantity--child" placeholder="2">
             <button type="button" class="searche__form-quantity--plus">
               <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -156,7 +158,7 @@
 
           </fieldset>
 
-          <button class="clear searche__form-button" type="button">Найти</button>
+          <button class="clear searche__form-button" type="submit">Найти</button>
 
         </form>
       </div>
@@ -223,7 +225,7 @@
     </p>
   </footer>
 
-  <script src="../js/script.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 

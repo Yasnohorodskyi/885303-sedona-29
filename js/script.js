@@ -14,10 +14,14 @@ button.addEventListener("click", function (evt) {
     }
 });
 
-popapButton.addEventListener("submit", function (evt) {
+popap.addEventListener("submit", function (evt) {
     if (!popapArrival.value || !popapDeparture.value || !popapButton.value) {
         evt.preventDefault();
-        popap.classList.add("popap-error");
+        if (popap.classList.contains("popap-error")) {
+            popap.classList.remove("popap-error");
+        } else {
+            popap.classList.add("popap-error");
+        }
     }
 });
 
