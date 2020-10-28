@@ -511,6 +511,11 @@
   fill: var(--active-logo);
 }
 
+.main-footer__contacts-tel {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
 /* Searche form */
 
 .searche__form {  
