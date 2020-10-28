@@ -756,8 +756,11 @@
 .selection__range-filter {  
   width: 100%;
   height: 2px;
-  background-color: var(--basic-white); 
-  opacity: 0.3;  
+  background-color: var(--basic-white);    
+}
+
+.selection__range-bar {
+  opacity: 0.3;
 }
 
 .selection__price-controls {
@@ -798,10 +801,9 @@
 .selection__toggle {
   width: 4px;
   height: 4px;
-  padding: 0;
-  border: 8px solid var(--basic-white);  
-  border-radius: 50%;
-  opacity: 1;
+  padding: 0;  
+  border: 8px solid var(--basic-white); 
+  border-radius: 50%;  
 }
 
 .toggle-min {
@@ -945,7 +947,8 @@
   line-height: 26px;
   color: var(--basic-black);
   display: inline-block;
-  margin-bottom: 8px;  
+  margin-bottom: 8px;
+  text-decoration: none;   
 }
 
 .sorting-list__title:hover {
