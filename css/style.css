@@ -741,7 +741,8 @@
 .selection__price-controls input {
   border: none;
   background-color: var(--opacity);
-  color: var(--basic-white);    
+  color: var(--basic-white);
+  line-height: 21px;    
 }
 
 .selection__price-controls label {
@@ -767,12 +768,12 @@
 
 .selection__range-scale {
   height: 2px;
-  opacity: 0.3;
-  z-index: 1;
+  background-color: var(--basic-darkgrey);  
 }
 
 .selection__range-bar {
-  width: 70%;
+  width: 85%;
+  height: 2px;
   background-color: var(--basic-white);
 }
 
