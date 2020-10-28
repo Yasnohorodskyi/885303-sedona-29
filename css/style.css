@@ -756,14 +756,24 @@
 .selection__range-filter {  
   width: 100%;
   height: 2px;
-  background-color: var(--basic-white); 
-  opacity: 0.3;  
+  background-color: var(--basic-white);  
 }
 
 .selection__price-controls {
   display: flex;  
   margin-top: 11px;
   margin-bottom: 20px;
+}
+
+.selection__range-scale {
+  height: 2px;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.selection__range-bar {
+  width: 70%;
+  background-color: var(--basic-white);
 }
 
 .selection__min-price,
@@ -945,7 +955,8 @@
   line-height: 26px;
   color: var(--basic-black);
   display: inline-block;
-  margin-bottom: 8px;  
+  margin-bottom: 8px;
+  text-decoration: none;  
 }
 
 .sorting-list__title:hover {
