@@ -2,7 +2,6 @@ let popap = document.querySelector('.searche__form');
 let button = document.querySelector('.offer__button');
 let popapArrival = popap.querySelector('.searche__form-arrival');
 let popapDeparture = popap.querySelector('.searche__form-departure');
-let popapButton = popap.querySelector('.searche__form-button');
 
 button.addEventListener("click", function (evt) {
     if (popap.classList.contains("popap-show")) {
