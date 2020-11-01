@@ -248,23 +248,17 @@
 }
 
 .advantages__item > *:nth-child(1) {
-
   -ms-grid-row: 1;
-
   -ms-grid-column: 1;
 }
 
 .advantages__item > *:nth-child(2) {
-
   -ms-grid-row: 1;
-
   -ms-grid-column: 2;
 }
 
 .advantages__item > *:nth-child(3) {
-
   -ms-grid-row: 1;
-
   -ms-grid-column: 3;
 }
 
@@ -751,8 +745,7 @@
   padding: 10px;
   border: none;  
   background-color: var(--basic-grey);
-  color: var(--basic-black);
-  outline: none;  
+  color: var(--basic-black);    
 }
 
 .searche__form-quantity button {  
