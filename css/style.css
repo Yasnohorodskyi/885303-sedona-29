@@ -666,27 +666,69 @@
 
 .searche__form-arrival,
 .searche__form-departure {
-  padding-left: 13px; 
+  padding-left: 13px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.searche__form-arrival::-webkit-input-placeholder,
+.searche__form-departure::-webkit-input-placeholder {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.searche__form-arrival::-moz-placeholder,
+.searche__form-departure::-moz-placeholder {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.searche__form-arrival:-moz-placeholder,
+.searche__form-departure:-moz-placeholder {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.searche__form-arrival:-ms-input-placeholder,
+.searche__form-departure:-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-black);
 }
 
 .searche__form-date--calendar-arrival {
-  position: absolute;  
-  background-image: url('../img/calendar.svg');
-  border: none;
-  width: 21px;
-  height: 23px;
-  top: 60px;
-  right: 70px;      
+  position: absolute;    
+  border: none;  
+  top: 62px;
+  right: 59px;
+  outline-color: var(--basic-darkgrey);   
 }
 
 .searche__form-date--calendar-departure {  
   position: absolute;
-  background-image: url('../img/calendar.svg');
   border: none;
-  width: 21px;
-  height: 23px;
-  top: 132px;
-  right: 70px;
+  top: 129px;
+  right: 59px;
+  outline-color: var(--basic-darkgrey);    
+}
+
+.searche__form-date--calendar-arrival path:hover,
+.searche__form-date--calendar-departure path:hover {
+  fill: var(--basic-black);
 }
 
 .searche__form-date input:hover {
@@ -739,13 +781,53 @@
 }
 
 .searche__form-quantity--grown,
-.searche__form-quantity--child {   
+.searche__form-quantity--child {
+  font-weight: bold; 
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;  
   width: 20px;
   height: 20px;
   padding: 10px;
   border: none;  
   background-color: var(--basic-grey);
   color: var(--basic-black);    
+}
+
+.searche__form-quantity--grown::-webkit-input-placeholder,
+.searche__form-quantity--child::-webkit-input-placeholder {
+  font-weight: bold; 
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center; 
+  color: var(--basic-black);
+}
+
+.searche__form-quantity--grown::-moz-placeholder,
+.searche__form-quantity--child::-moz-placeholder {
+  font-weight: bold; 
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center; 
+  color: var(--basic-black);
+}
+
+.searche__form-quantity--grown:-moz-placeholder,
+.searche__form-quantity--child:-moz-placeholder {
+  font-weight: bold; 
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center; 
+  color: var(--basic-black);
+}
+
+.searche__form-quantity--grown:-ms-input-placeholder,
+.searche__form-quantity--child:-ms-input-placeholder {
+  font-weight: bold; 
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center; 
+  color: var(--basic-black);
 }
 
 .searche__form-quantity button {  
