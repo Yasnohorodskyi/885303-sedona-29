@@ -16,6 +16,8 @@ button.addEventListener("click", function (evt) {
 popap.addEventListener("submit", function (evt) {
     if (!popapArrival.value || !popapDeparture.value || !popapButton.value) {
         evt.preventDefault();
+        popap.classList.remove("popap-error");
+        popap.offsetWidth = popap.offsetWidth;
         popap.classList.add("popap-error");
     }
 });
