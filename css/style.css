@@ -17,6 +17,7 @@
   --basic-grey: #F2F2F2;
   --basic-greylight: #EEEEEE;
   --basic-darkgrey: #666666;
+  --shadow-grey: #6A6A6A;
 
   --hover-blue: #669EC0;
   --hover-brown: #604E43;
@@ -31,6 +32,7 @@
   --scale-bar: #ABABAB;
   --opacity: rgba(255, 255, 255, 0);
   --shadow: rgba(0, 0, 0, 0.4);
+  --opacity: rgba(0, 0, 0, 0);
   
 }
 
@@ -715,7 +717,7 @@
   border: none;  
   top: 62px;
   right: 59px;
-  outline-color: var(--basic-darkgrey);   
+  outline-color: var(--hover-grey);   
 }
 
 .searche__form-date--calendar-departure {  
@@ -723,12 +725,15 @@
   border: none;
   top: 129px;
   right: 59px;
-  outline-color: var(--basic-darkgrey);    
+  outline-color: var(--hover-grey);    
 }
 
-.searche__form-date--calendar-arrival path:hover,
-.searche__form-date--calendar-departure path:hover {
+.calendar-icon:hover path {
   fill: var(--basic-black);
+}
+
+.calendar-icon:active path {
+  fill: var(--basic-blue);
 }
 
 .searche__form-date input:hover {
