@@ -965,6 +965,26 @@
   border: none;
 }
 
+.selection__section-check:checked:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  width: 27px;
+  height: 23px;  
+  background-image: url('../img/disable.svg');
+  border: none;  
+}
+
+.selection__section-check:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  width: 23px;
+  height: 23px;  
+  background-image: url('../img/checkbox-off.png');
+  border: none;  
+}
+
 .selection__price-controls input {
   border: none;
   background-color: var(--opacity);
@@ -1055,6 +1075,13 @@
   position: absolute;
   top: -9px;
   left: 0;
+}
+
+.selection__toggle:hover {
+  width: 6px;
+  height: 6px;  
+  top: -10px;
+  left: -1;
 }
 
 .toggle-max {
