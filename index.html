@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона (Лесняк К.А.)</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body-page">
@@ -32,7 +32,7 @@
       <h1 class="visually-hidden">Сайт городка SEDONA</h1>
 
       <section class="billboard clear">
-        <img src="img/welcome.png" alt="Добро пожаловать в городок SEDONA" class="greeting" width="456" height="351">
+        <img src="img/welcome.svg" alt="Добро пожаловать в городок SEDONA" class="greeting" width="456" height="351">
       </section>
 
       <section class="preview">
@@ -111,14 +111,14 @@
         <p class="offer__text clear">Укажите предполагаемые даты поездки,<br> и
           мы покажем вам лучшие предложения гостиниц в Cедоне</p>
 
-        <div class="searche__form-wrap">
+        <div class="search__form-wrap">
           <button class="clear offer__button" type="button">Поиск гостиницы в Седоне</button>
 
-          <form class="clear searche__form popap-show" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="clear searche__form-date searche__form-date--arrival-icon">
-              <label for="arrival" class="clear searche__form-date--arrival">Дата заезда:</label>
-              <input type="text" id="arrival" name="arrival" class="searche__form-arrival" placeholder="24 апреля 2017">
-              <button type="button" class="searche__form-date--calendar-arrival">
+          <form class="clear search__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="clear search__form-date search__form-date--arrival-icon">
+              <label for="arrival" class="clear search__form-date--arrival">Дата заезда:</label>
+              <input type="text" id="arrival" name="arrival" class="search__form-arrival" placeholder="24 апреля 2017">
+              <button type="button" class="search__form-date--calendar-arrival">
                 <svg class="calendar-icon" width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"
@@ -130,10 +130,10 @@
               </button>
             </fieldset>
 
-            <fieldset class="clear searche__form-date searche__form-date--departure-icon">
-              <label for="departure" class="clear searche__form-date--departure">Дата выезда:</label>
-              <input type="text" id="departure" name="departure" class="searche__form-departure" placeholder="31 апреля 2017">
-              <button type="button" class="searche__form-date--calendar-departure">
+            <fieldset class="clear search__form-date search__form-date--departure-icon">
+              <label for="departure" class="clear search__form-date--departure">Дата выезда:</label>
+              <input type="text" id="departure" name="departure" class="search__form-departure" placeholder="31 апреля 2017">
+              <button type="button" class="search__form-date--calendar-departure">
                 <svg class="calendar-icon" width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"
@@ -145,16 +145,16 @@
               </button>
             </fieldset>
 
-            <fieldset class="clear searche__form-quantity">
+            <fieldset class="clear search__form-quantity">
 
-              <label for="grown" class="clear searche__form-quantity-grown">Взрослые</label>
-              <button type="button" class="searche__form-quantity--minus">
+              <label for="grown" class="clear search__form-quantity-grown">Взрослые</label>
+              <button type="button" class="search__form-quantity--minus"><span class="visually-hidden">Кнопка минус</span>
                 <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="12" height="3" fill="#A9A9A9" />
                 </svg>
               </button>
-              <input type="text" id="grown" name="grown" class="clear searche__form-quantity--grown" placeholder="2">
-              <button type="button" class="searche__form-quantity--plus">
+              <input type="text" id="grown" name="grown" class="clear search__form-quantity--grown" placeholder="2">
+              <button type="button" class="search__form-quantity--plus"><span class="visually-hidden">Кнопка плюс</span>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
@@ -162,14 +162,14 @@
                 </svg>
               </button>
 
-              <label for="child" class="searche__form-quantity-child">Дети</label>
-              <button type="button" class="searche__form-quantity--minus">
+              <label for="child" class="search__form-quantity-child">Дети</label>
+              <button type="button" class="search__form-quantity--minus"><span class="visually-hidden">Кнопка минус</span>
                 <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="12" height="3" fill="#A9A9A9" />
                 </svg>
               </button>
-              <input type="text" id="child" name="child" class="clear searche__form-quantity--child" placeholder="2">
-              <button type="button" class="searche__form-quantity--plus">
+              <input type="text" id="child" name="child" class="clear search__form-quantity--child" placeholder="2">
+              <button type="button" class="search__form-quantity--plus"><span class="visually-hidden">Кнопка плюс</span>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
@@ -179,7 +179,7 @@
 
             </fieldset>
 
-            <button class="clear searche__form-button" type="submit">Найти</button>
+            <button class="clear search__form-button" type="submit">Найти</button>
 
           </form>
         </div>
@@ -235,6 +235,7 @@
         </ul>
       </section>
       <p class="main-footer__logo">
+        <span class="visually-hidden">Логотип HTML Academy</span>
         <span class="main-footer__text">Website by</span>
         <a class="main-footer__logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
           <svg width="115" height="41" viewBox="0 0 115 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -248,7 +249,7 @@
 
   </div>
 
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
