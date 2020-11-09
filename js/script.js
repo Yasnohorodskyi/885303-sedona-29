@@ -1,29 +1,26 @@
-let popap = document.querySelector('.searche__form');
+let searchForm = document.querySelector('.search__form');
 let button = document.querySelector('.offer__button');
-let popapArrival = popap.querySelector('.searche__form-arrival');
-let popapDeparture = popap.querySelector('.searche__form-departure');
+let searchFormArrival = searchForm.querySelector('.search__form-arrival');
+let searchFormDeparture = searchForm.querySelector('.search__form-departure');
 
-button.addEventListener("click", function (evt) {
-    if (popap.classList.contains("popap-show")) {
+searchForm.classList.add('search__form-show');
+
+button.addEventListener('click', function (evt) {
+    if (searchForm.classList.contains('search__form-show')) {
         evt.preventDefault();
-        popap.classList.remove("popap-show");
+        searchForm.classList.remove('search__form-show');
+        searchForm.classList.remove('search__form-error');
     } else {
-        popap.classList.add("popap-show");
-        popapArrival.focus();
+        searchForm.classList.add('search__form-show');
+        searchFormArrival.focus();
     }
 });
 
-popap.addEventListener("submit", function (evt) {
-    if (!popapArrival.value || !popapDeparture.value || !popapButton.value) {
+searchForm.addEventListener('submit', function (evt) {
+    if (!searchFormArrival.value || !searchFormDeparture.value || !searchFormButton.value) {
         evt.preventDefault();
-        popap.classList.remove("popap-error");
-        popap.offsetWidth = popap.offsetWidth;
-        popap.classList.add("popap-error");
+        searchForm.classList.remove('search__form-error');
+        searchForm.offsetWidth = searchForm.offsetWidth;
+        searchForm.classList.add('search__form-error');
     }
 });
-
-
-
-
-
-
